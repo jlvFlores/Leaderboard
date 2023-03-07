@@ -34,7 +34,7 @@ button {
   padding: 0.25rem;
 }
 
-.gray-bg {
+.scores p:nth-child(even) {
   background-color: lightgray;
 }
 
