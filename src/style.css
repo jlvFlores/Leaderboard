@@ -1,5 +1,15 @@
 * {
   font-weight: 600;
+  color: white;
+}
+
+body {
+  background-position: 50%;
+  background-image: url('https://assets.goaaa.com/image/upload/w_auto,q_auto:best,f_auto/v1647565564/singularity-migrated-images/northern-lights-aurora-borealis-fairbanks-alaska-via-magazine-aaa-bucket-list-experience-shutterstock_695456167.jpg.jpg');
+}
+
+h1 {
+  margin-left: 4.5rem;
 }
 
 section {
@@ -8,25 +18,47 @@ section {
   justify-content: center;
 }
 
-.recent-scores {
+.recent-scores,
+.add-score {
+  background-color: rgba(22, 0, 32, 0.4);
+  border-radius: 1rem;
+}
+
+.add-score {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  max-height: 30vh;
+}
+
+.center {
   width: 80%;
   margin: 0 auto;
 }
 
+.scores {
+  max-height: 65vh;
+  margin-bottom: 1.5rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scores::-webkit-scrollbar {
+  display: none;
+}
+
 .rs-title {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.scores,
-button,
-input {
-  border: 2px solid black;
-}
-
 button {
-  box-shadow: 3px 3px;
+  box-shadow: 2px 2px;
+  background-color: #191919;
+  padding: 0.5rem;
+  border: none;
 }
 
 .scores p {
@@ -35,23 +67,24 @@ button {
 }
 
 .scores p:nth-child(even) {
-  background-color: lightgray;
-}
-
-.add-score {
-  display: flex;
-  justify-content: center;
+  background-color: #111;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: end;
+  justify-content: center;
+}
+
+form > h2 {
+  margin: 0 auto 2rem;
 }
 
 input {
-  margin-bottom: 1rem;
-  width: 10rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: #111;
 }
 
 form button {
